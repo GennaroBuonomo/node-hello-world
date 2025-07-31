@@ -1,3 +1,10 @@
-console.log(process.argv[2])
+let param = process.argv[2]
 
-console.log('Hello boolean')
+if(process.argv[2] != undefined){
+  param = process.argv[2];
+}
+else{
+  param = "World"
+}
+
+console.log(`Hello ${param}`)
